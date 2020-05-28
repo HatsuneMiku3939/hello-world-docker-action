@@ -1,5 +1,5 @@
-#!/bin/sh -l
+#!/bin/bash
+set -euo pipefail
 
-echo "Hello $1"
 time=$(date)
-echo ::set-output name=time::$time
+echo "$time - Hello $1"
